@@ -2,8 +2,6 @@ package fintech.driver;
 
 import java.util.Scanner;
 
-import fintech.model.Account;
-
 /**
  * @author 12S23030-Simorangkir jonathan
  * @author 12S23046-Anastasya Tabitha Blessing Siahaan
@@ -21,7 +19,9 @@ public class Driver1 {
         String accountname = Accountname.nextLine();
 
         if (command.equals("create-account")) {
-            System.out.println(owner + "|" + accountname + "|" + balance);
+            System.out.println(accountname + "|" + owner + "|" + balance);
+        } else {
+            System.out.println("failed");
         }
 
         Command.close();
