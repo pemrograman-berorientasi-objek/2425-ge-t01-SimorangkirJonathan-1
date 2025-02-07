@@ -5,7 +5,7 @@ import fintech.model.Account;
 
 /**
  * @author 12S23030-Simorangkir jonathan
- * @author 12S23046-Anastasya Tabitha Blessing Siahaan
+ * @author 12S23046-Anastasya T.B Siahaan
  */
 public class Driver1 {
 
