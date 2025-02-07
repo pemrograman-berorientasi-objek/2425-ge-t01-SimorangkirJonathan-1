@@ -17,10 +17,9 @@ public class Driver1 {
         String owner = com.nextLine();
         String accountname = com.nextLine();
 
-        if (com.equals("create-account")) {
+        if (command.equals("create-account")) {
             Account acc = new Account(owner, accountname);
             System.out.println(acc.toString());
-            System.out.println(acc);
         }
         com.close();
 
