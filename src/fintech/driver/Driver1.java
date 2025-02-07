@@ -1,6 +1,7 @@
 package fintech.driver;
 
 import java.util.Scanner;
+import fintech.model.Account;
 
 /**
  * @author 12S23030-Simorangkir jonathan
@@ -9,24 +10,19 @@ import java.util.Scanner;
 public class Driver1 {
 
     public static void main(String[] _args) {
-        Scanner Command = new Scanner(System.in);
-        Scanner Owner = new Scanner(System.in);
-        Scanner Accountname = new Scanner(System.in);
+        Scanner com = new Scanner(System.in);
         double balance = 0.0;
 
-        String command = Command.nextLine();
-        String owner = Owner.nextLine();
-        String accountname = Accountname.nextLine();
+        String command = com.nextLine();
+        String owner = com.nextLine();
+        String accountname = com.nextLine();
 
-        if (command.equals("create-account")) {
-            System.out.println(accountname + "|" + owner + "|" + balance);
-        } else {
-            System.out.println("failed");
+        if (com.equals("create-account")) {
+            Account acc = new Account(owner, accountname);
+            System.out.println(acc.toString());
+            System.out.println(acc);
         }
-
-        Command.close();
-        Owner.close();
-        Accountname.close();
+        com.close();
 
     }
 
