@@ -29,6 +29,6 @@ public class Account {
 
     @Override
     public String toString() {
-        return this.owner + "|" + this.accountname + "|" + this.balance;
+        return this.accountname + "|" + this.owner + "|" + this.balance;
     }
 }
